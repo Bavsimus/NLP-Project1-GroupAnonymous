@@ -36,6 +36,9 @@ print(f"Training set: {X_train.shape[0]} | Test set: {X_test.shape[0]}")
 print(f"Features: {X_tfidf.shape[1]}")
 
 # Grid Search for best parameters
+# It gives high efficiency while optimizing hyperparameters
+# If we don't use it, we should have to manually set parameters
+# and we should have to try every combination one by one
 print("\nTraining model with GridSearchCV...")
 param_grid = {
     'C': [0.1, 1, 10, 100],
@@ -53,11 +56,10 @@ grid_search = GridSearchCV(
 
 grid_search.fit(X_train, y_train)
 
-# Test the best model
 best_svm = grid_search.best_estimator_
 y_pred = best_svm.predict(X_test)
 
-# Results
+
 print("\n" + "=================================")
 print("RESULTS")
 print("=================================")
