@@ -20,12 +20,10 @@ htmlcov/
 
 .ipynb_checkpoints
 
-*.csv
 *.json
 *.jsonl
 *.tsv
 *.xml
-*.txt
 data/
 
 *.pkl

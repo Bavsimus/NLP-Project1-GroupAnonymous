@@ -1,0 +1,26 @@
+(venv) ➜  NLP-Project1-GroupAnonymous git:(main) ✗ python SVM_TF_IDF.py
+=================================
+SPAM DETECTION - SVM with TF-IDF
+=================================
+Dataset size: 5171 samples
+Training set: 4136 | Test set: 1035
+Features: 5000
+
+Training model with GridSearchCV...
+
+=================================
+RESULTS
+=================================
+Best parameters: {'C': 1, 'class_weight': None}
+Accuracy: 0.9855
+
+Confusion Matrix:
+  True Ham: 725 | False Spam: 10
+  False Ham: 5 | True Spam: 295
+
+Spam Detection:
+  Precision: 0.9672
+  Recall: 0.9833
+  F1-Score: 0.9752
+
+=================================
