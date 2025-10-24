@@ -56,3 +56,29 @@ This project implements various machine learning techniques for spam email class
 - **Results (TF-IDF):**
   - **Accuracy:** 97.87%
   - **Spam F1-Score:** 0.96
+ 
+### 5. K-Nearest Neighbors (KNN) with N-grams and TF-IDF
+- **File:** 'knn_plus_TFIDF_Ngrams.ipnyb'
+- **Method:** K-Nearest Neighbors Classifier (n_neighbors=5, n_jobs=-1).
+- **Detailed Explanation:**
+The KNN algorithm classifies each message by comparing it to the most similar ones in the training data. It is a non-parametric and instance-based learning method that relies on distance metrics to determine similarity. Although simple, it can be computationally expensive and sensitive to the choice of features and scaling.
+- **Results (N-grams):**
+- **Accuracy:** 81.55%
+- **Spam F1-Score:** 0.76
+- **Results (TF-IDF):**
+- **Accuracy:** 61.26%
+- **Spam F1-Score:** 0.60
+
+
+### 6.Logistic Regression with N-grams and TF-IDF
+- **File:** 'logisticRegression_plus_TFIDF_Ngrams.ipnyb'
+- **Method:** Logistic Regression (solver='liblinear', max_iter=1000, random_state=42)
+- **Detailed Explanation:**
+Logistic Regression is a linear model commonly used for text classification tasks. It calculates the probability of an email being spam based on learned word weights. It performs efficiently with TF-IDF and N-gram features, balancing interpretability and performance without overfitting.
+- **Results (N-grams):**
+- **Accuracy:** 98.45%
+- **Spam F1-Score:** 0.97
+- **Results (TF-IDF):**
+- **Accuracy:** 96.91%
+- **Spam F1-Score:** 0.95
+  
